@@ -1,0 +1,33 @@
+.PlaylistItem {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  overflow-y: scroll;
+  width: 37%;
+  max-height: 950px;
+  padding: 2.27rem 1.16rem;
+  background-color: rgba(1, 12, 63, 0.7);
+  box-shadow: 0 4px 2px 2px #000000;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+.PlaylistItem h2 {
+  margin-bottom: 30px;
+}
+
+
+.PlaylistItem p {
+  color: rgba(256, 256, 256, 0.8);
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+}
+
+@media only screen and (max-width: 1020px) {
+  .PlaylistItem {
+    width: 90%;
+  }
+}
